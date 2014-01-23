@@ -25,7 +25,9 @@ header#site-header {
         vertical-align: middle;
 
         span.color {
-          background-color: $blue;
+          @include linear-gradient(lighten($green, 5%), darken($green, 10%));
+          box-shadow: inset 0 2px 5px 0 rgba(black, .38);
+
           display: block;
           height: 100%;
           width: 100%;
@@ -43,6 +45,8 @@ header#site-header {
           span.color {
             @include transform(translateY(0));
             box-shadow: 0 5px 10px 0 rgba(0,0,0,.38);
+            background-image: none;
+            background-color: $blue;
           }
 
           div {
@@ -57,7 +61,6 @@ header#site-header {
 
         &:hover span.color, &.active-trail span.color {
           @include transform(translateY(0));
-          box-shadow: 0 5px 10px 0 rgba(0,0,0,.38);
 
           a {color: white;}
         }
@@ -73,6 +76,7 @@ header#site-header {
           font-family: Chalet, sans-serif;
           @include transition(color .2s);
           @include x-rem(font-size, 1.6);
+          border-left: 1px solid $orange;
 
           &:hover, &:active, &.active {
             color: white;
