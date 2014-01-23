@@ -1,0 +1,20 @@
+// Import Orion's prototyping tools
+@import '../../_orion/prototype';
+
+#main {
+  @include wirebox();
+  @include wiretag('main');
+
+  .col {
+    @include wirebox();
+    @include wiresize(null, 10em);
+
+    &.one {
+      @include wiretag('col 1');
+    }
+
+    &.two {
+      @include wiretag('col 2');
+    }
+  }
+}

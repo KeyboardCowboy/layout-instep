@@ -11,13 +11,7 @@
 
 // -- MIXINS AND FUNCTIONS
 // -----------------------
-// Other functions and mixins may depend on Bourbon, so load it first.
-@import '../_orion/mixins/bourbon/bourbon';
-
-// Load Orion's custom functions
-@import '../_orion/functions';
-
-// Load Orion's custom mixins
+// Load Orion's custom mixins, including Bourbon
 @import '../_orion/mixins';
 
 // Create your own custom mixins
@@ -32,5 +26,8 @@
 // Load Orion's base styles such as Typeplate and Normalize.
 @import '../_orion/styles';
 
-// Import your own styles
-@import 'styles/_global.scss';
+@import 'styles/global/structure';
+@import 'styles/global/content';
+
+@import 'styles/elements/header';
+@import 'styles/elements/footer';

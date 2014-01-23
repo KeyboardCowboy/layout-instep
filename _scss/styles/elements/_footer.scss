@@ -1,0 +1,5 @@
+@include sticky-footer('#page', 'footer#site-footer', 200px);
+
+footer#site-footer {
+  background-color: $green;
+}

@@ -5,15 +5,43 @@ append head_meta
   title #{site_name} | #{page.title}
 
 append head_js
+  +js('http://codeorigin.jquery.com/jquery-1.10.2.min.js')
 
 append head_css
-  mixin css('css/default')
+  +css('http://fonts.googleapis.com/css?family=Varela+Round|Metrophobic')
+  +css('css/default')
+
+append layout_links
+  include includes/layout_links
 
 append header
-  p In the header
+  a(href="#", id="logo")
+    img(src="images/logo.png")
+
+  nav#main-nav
+    ul
+      li.placeholder
+        span.color &nbsp;
+        div.placebo &nbsp;
+      li.first
+        span.color &nbsp;
+        a(href="#") Home
+      li.active-trail
+        span.color &nbsp;
+        a(href="#").active About Us
+      li
+        span.color &nbsp;
+        a(href="#") The Insole
+      li
+        span.color &nbsp;
+        a(href="#") Community
+      li
+        span.color &nbsp;
+        a(href="#") Contact
+
 
 append main
-  include ../_orion/jade/includes/styleguide
+  .col.one
+  .col.two
 
 append footer
-  p in the footer
