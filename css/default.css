@@ -919,7 +919,7 @@ ul.menu li, ol.menu li {
   list-style-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000344}}
 nav.inline ul li {
   display: inline-block;
   list-style: none;
@@ -927,12 +927,21 @@ nav.inline ul li {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000351}}
 nav.inline ul li a {
   display: inline-block;
   margin-right: -5px;
+  line-height: 1.0em;
   padding-left: .5em;
   padding-right: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000365}}
+nav.inline.divided li a {
+  border-left: 1px solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_lists\.scss}line{font-family:\0000367}}
+nav.inline.divided li:first-child a {
+  border-left: none;
 }
 
 @font-face {
@@ -976,11 +985,7 @@ div#page {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000325}}
 #main .col.one {
-  margin-right: calc(1em - 5px);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000329}}
-#main .col.two {
-  margin-left: 1em;
+  margin-right: -5px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_ost-typography\.scss}line{font-family:\0000334}}
@@ -1334,7 +1339,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2.75rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000344}}
 #main {
   margin-right: 36px;
   margin-right: 2rem;
@@ -1380,7 +1385,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\000031}}
 header#site-header {
   background-color: #0082c8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(62%, #0082c8), color-stop(62%, transparent));
@@ -1399,7 +1404,7 @@ header#site-header:before, header#site-header:after {
 header#site-header:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\000037}}
 header#site-header a#logo {
   display: block;
   width: 18vw;
@@ -1408,11 +1413,12 @@ header#site-header a#logo {
   position: relative;
   z-index: 5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000315}}
 header#site-header a#logo img {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000320}}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\000032}}
 header#site-header nav#main-nav {
   display: block;
   border-bottom: 3px solid #0082c8;
@@ -1426,12 +1432,12 @@ header#site-header nav#main-nav {
   background-image: -webkit-linear-gradient(top, white, #dddddd);
   background-image: linear-gradient(to bottom,white, #dddddd);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000313}}
 header#site-header nav#main-nav ul {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000317}}
 header#site-header nav#main-nav ul li {
   margin: 0;
   padding: 0;
@@ -1442,7 +1448,7 @@ header#site-header nav#main-nav ul li {
   z-index: 1;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000327}}
 header#site-header nav#main-nav ul li span.color {
   background-color: #0082c8;
   display: block;
@@ -1459,12 +1465,12 @@ header#site-header nav#main-nav ul li span.color {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000339}}
 header#site-header nav#main-nav ul li.placeholder {
   width: 9%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000343}}
 header#site-header nav#main-nav ul li.placeholder span.color {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1473,17 +1479,17 @@ header#site-header nav#main-nav ul li.placeholder span.color {
   transform: translateY(0);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.38);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000348}}
 header#site-header nav#main-nav ul li.placeholder div {
   padding: .25em 1em 0 1em;
   font-size: 28.8px;
   font-size: 1.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000355}}
 header#site-header nav#main-nav ul li.first a {
   padding-left: 12vw;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000358}}
 header#site-header nav#main-nav ul li:hover span.color, header#site-header nav#main-nav ul li.active-trail span.color {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1492,11 +1498,11 @@ header#site-header nav#main-nav ul li:hover span.color, header#site-header nav#m
   transform: translateY(0);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.38);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000362}}
 header#site-header nav#main-nav ul li:hover span.color a, header#site-header nav#main-nav ul li.active-trail span.color a {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000365}}
 header#site-header nav#main-nav ul li a {
   display: block;
   padding: .25em 1em 0 1em;
@@ -1512,9 +1518,22 @@ header#site-header nav#main-nav ul li a {
   font-size: 28.8px;
   font-size: 1.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/_header\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000377}}
 header#site-header nav#main-nav ul li a:hover, header#site-header nav#main-nav ul li a:active, header#site-header nav#main-nav ul li a.active {
   color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_utility-nav\.scss}line{font-family:\000032}}
+header#site-header nav#utility {
+  margin: 9px 18px 0 0;
+  margin: 0.5rem 1rem 0 0;
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/styles\/elements\/header\/_utility-nav\.scss}line{font-family:\000036}}
+header#site-header nav#utility a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_ost-structure\.scss}line{font-family:\0000371}}
@@ -1544,12 +1563,12 @@ footer#site-footer {
   background-color: #d5e14d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\000033}}
 body {
   padding-top: 35px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\000037}}
 nav#prototype {
   padding: 0 1em;
   margin: 0;
@@ -1564,17 +1583,17 @@ nav#prototype {
   overflow: hidden;
   z-index: 9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000321}}
 nav#prototype ul {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000325}}
 nav#prototype ul li {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000329}}
 nav#prototype ul li a {
   padding: .25em .5em;
   color: white;
@@ -1582,18 +1601,18 @@ nav#prototype ul li a {
   margin: 0 1em;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/styles\/_prototype\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000336}}
 nav#prototype ul li a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/_prototype\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\000034}}
 #main {
   border: 1px dashed #000033;
   background-color: rgba(0, 0, 51, 0.2);
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
 #main:before {
   content: "main";
   font-size: 10pt;
@@ -1608,21 +1627,21 @@ nav#prototype ul li a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
 #main:hover:before {
   z-index: 99;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/_prototype\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\000038}}
 #main .col {
   border: 1px dashed #000033;
   background-color: rgba(0, 0, 51, 0.2);
   height: 10em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/_prototype\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\0000312}}
 #main .col.one {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
 #main .col.one:before {
   content: "col 1";
   font-size: 10pt;
@@ -1637,15 +1656,15 @@ nav#prototype ul li a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
 #main .col.one:hover:before {
   z-index: 99;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/_prototype\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\0000316}}
 #main .col.two {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
 #main .col.two:before {
   content: "col 2";
   font-size: 10pt;
@@ -1660,7 +1679,7 @@ nav#prototype ul li a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
 #main .col.two:hover:before {
   z-index: 99;
 }

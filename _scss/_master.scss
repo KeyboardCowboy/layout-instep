@@ -1,4 +1,5 @@
-// Orion base partial.  Copy this file into your project.
+// Orion base partial.  Copy this file into your project and include it at the
+// top of any stylesheet you compile.
 
 // -- VARIABLES
 // ------------
@@ -20,14 +21,22 @@
 
 // -- STYLE DEFINITIONS
 // --------------------
+// Import global styles here after Orion's.
+
 // Optional compilation of awesome CSS3 background patterns
 //@import '../_orion/backgrounds';
 
 // Load Orion's base styles such as Typeplate and Normalize.
 @import '../_orion/styles';
 
+// Global project styles
 @import 'styles/global/structure';
 @import 'styles/global/content';
 
 @import 'styles/elements/header';
 @import 'styles/elements/footer';
+
+
+// -- PROTOTYPING
+// --------------
+@import 'components/prototype';

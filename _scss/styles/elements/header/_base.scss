@@ -1,0 +1,19 @@
+header#site-header {
+  @include linear-gradient(top, $blue 62%, transparent 62%);
+  @include clearfix;
+  position: relative;
+  background-color: transparent;
+
+  a#logo {
+    display: block;
+    width: 18vw;
+    min-width: 75px;
+    float: left;
+    position: relative;
+    z-index: 5;
+
+    img {
+      width: 100%;
+    }
+  }
+}

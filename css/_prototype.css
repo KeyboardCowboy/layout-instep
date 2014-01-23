@@ -1,0 +1,120 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\000033}}
+body {
+  padding-top: 35px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\000037}}
+nav#prototype {
+  padding: 0 1em;
+  margin: 0;
+  position: fixed;
+  height: 35px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000321}}
+nav#prototype ul {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000325}}
+nav#prototype ul li {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000329}}
+nav#prototype ul li a {
+  padding: .25em .5em;
+  color: white;
+  font-size: 12pt;
+  margin: 0 1em;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/styles\/_prototype\.scss}line{font-family:\0000336}}
+nav#prototype ul li a:hover {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\000034}}
+#main {
+  border: 1px dashed black;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+#main:before {
+  content: "main";
+  font-size: 10pt;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding: .25em .5em;
+  border-left: 1px dotted;
+  border-bottom: 1px dotted;
+  border-bottom-left-radius: .5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+#main:hover:before {
+  z-index: 99;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\000038}}
+#main .col {
+  border: 1px dashed black;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 10em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\0000312}}
+#main .col.one {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+#main .col.one:before {
+  content: "col 1";
+  font-size: 10pt;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding: .25em .5em;
+  border-left: 1px dotted;
+  border-bottom: 1px dotted;
+  border-bottom-left-radius: .5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+#main .col.one:hover:before {
+  z-index: 99;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_scss\/components\/_prototype\.scss}line{font-family:\0000316}}
+#main .col.two {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\000037}}
+#main .col.two:before {
+  content: "col 2";
+  font-size: 10pt;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding: .25em .5em;
+  border-left: 1px dotted;
+  border-bottom: 1px dotted;
+  border-bottom-left-radius: .5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/layouts\/instep\/_orion\/mixins\/_prototype\.scss}line{font-family:\0000325}}
+#main .col.two:hover:before {
+  z-index: 99;
+}

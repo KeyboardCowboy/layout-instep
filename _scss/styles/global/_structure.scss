@@ -23,11 +23,12 @@ div#page {
     width: 50%;
 
     &.one {
-      margin-right: calc(1em - 5px);
+      margin-right: -5px;
+      //margin-right: calc(1em - 5px);
     }
 
     &.two {
-      margin-left: 1em;
+      //margin-left: 1em;
     }
   }
 }
