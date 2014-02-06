@@ -1,7 +1,6 @@
 @media ($collapse-nav) {
   .off-canvas-wrap {
     @include off-canvas-wrap;
-    height: 100%;
     background-color: $blue;
 
     &.move-left {
@@ -14,7 +13,7 @@
   }
   .inner-wrap {
     @include inner-wrap;
-    height: 100%;
+    box-shadow: 3px 0 5px 0 rgba(0,0,0,.5);
   }
 
   header#site-header {
@@ -34,6 +33,7 @@
       ul {
         @include off-canvas-list;
         height: 100%;
+        box-shadow: inset 3px 0 5px 0 rgba(0,0,0,.5);
 
         li {
           margin: 0;
@@ -47,6 +47,14 @@
 
           &.placeholder, span.color {
             display: none;
+          }
+
+          a {
+            //text-shadow: 1px 1px 1px #fff;
+            //font-family: Chalet, sans-serif;
+            @include transition(color .2s);
+            @include o-rem(font-size, 1.2);
+            color: white;
           }
         }
       }
@@ -72,7 +80,8 @@
           float: left;
 
           span.color {
-            @include linear-gradient(lighten($green, 5%), darken($green, 10%));
+            display: none;
+            /*@include linear-gradient(lighten($green, 5%), darken($green, 10%));
             box-shadow: inset 0 2px 5px 0 rgba(black, .38);
 
             display: block;
@@ -82,12 +91,13 @@
             z-index: 0;
 
             @include transform(translateY(-100%));
-            @include transition(all .2s ease-out);
+            @include transition(all .2s ease-out);*/
           }
 
           &.placeholder {
             width: 9%;
             height: 100%;
+            background-color: $blue;
 
             span.color {
               @include transform(translateY(0));
@@ -98,7 +108,7 @@
 
             div {
               padding: .25em 1em 0 1em;
-             @include x-rem(font-size, 1.6);
+             @include o-rem(font-size, 1.6);
             }
           }
 
@@ -122,8 +132,9 @@
             position: relative;
             font-family: Chalet, sans-serif;
             @include transition(color .2s);
-            @include x-rem(font-size, 1.6);
+            @include o-rem(font-size, 1.6);
             border-left: 1px solid $blue;
+            text-shadow: 1px 1px 1px #fff;
 
             &:hover, &:active, &.active {
               color: $blue;

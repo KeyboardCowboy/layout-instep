@@ -3766,17 +3766,16 @@ nav.inline.divided li:first-child a {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\000033}}
-html {
+html, body, .off-canvas-wrap, .inner-wrap {
   height: 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\000037}}
 body {
-  height: 100%;
   font-family: "Varela Round", serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000311}}
 div#page {
   background-color: #dddddd;
   background-image: -webkit-gradient(linear, white 100%, left bottom, color-stop(3%, #dddddd), color-stop(3%, white), color-stop(3.5%, white), color-stop(3.5%, #dddddd), color-stop(9%, #dddddd), color-stop(9%, white), color-stop(9.5%, white), color-stop(9.5%, #dddddd), color-stop(12.5%, #dddddd), color-stop(12.5%, white));
@@ -3785,18 +3784,18 @@ div#page {
   padding-bottom: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000316}}
 #main {
   margin-left: 36px;
   margin-left: 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000319}}
 #main .col {
   display: inline-block;
   vertical-align: top;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000324}}
 #main .col.one {
   margin-right: -5px;
 }
@@ -4152,7 +4151,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2.75rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000343}}
 #main {
   margin-right: 36px;
   margin-right: 2rem;
@@ -4229,6 +4228,7 @@ header#site-header a#logo {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000315}}
 header#site-header a#logo img {
   width: 100%;
+  min-width: 100px;
 }
 
 @media (max-width: 825px) {
@@ -4238,14 +4238,13 @@ header#site-header a#logo img {
     position: relative;
     width: 100%;
     overflow-x: hidden;
-    height: 100%;
     background-color: #0082c8;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_orion\/foundation\/scss\/foundation\/components\/_offcanvas\.scss}line{font-family:\00003108}}
   .off-canvas-wrap.move-right, .off-canvas-wrap.move-left {
     height: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\000037}}
   .off-canvas-wrap.move-left > .inner-wrap {
     -webkit-transform: translate3d(-250px, 0, 0);
     -moz-transform: translate3d(-250px, 0, 0);
@@ -4253,7 +4252,7 @@ header#site-header a#logo img {
     -o-transform: translate3d(-250px, 0, 0);
     transform: translate3d(-250px, 0, 0);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000311}}
   .off-canvas-wrap.move-left a.exit-off-canvas {
     -webkit-backface-visibility: hidden;
     transition: background 300ms ease;
@@ -4269,7 +4268,7 @@ header#site-header a#logo img {
     z-index: 1002;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000314}}
   .inner-wrap {
     -webkit-backface-visibility: hidden;
     position: relative;
@@ -4280,7 +4279,7 @@ header#site-header a#logo img {
     -ms-transition: -ms-transform 500ms ease;
     -o-transition: -o-transform 500ms ease;
     transition: transform 500ms ease;
-    height: 100%;
+    box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.5);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_orion\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003137}}
   .inner-wrap:before, .inner-wrap:after {
@@ -4292,16 +4291,16 @@ header#site-header a#logo img {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000320}}
   header#site-header nav#utility {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000324}}
   header#site-header h2 {
     color: white;
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000329}}
   header#site-header nav#main-nav {
     -webkit-backface-visibility: hidden;
     width: 250px;
@@ -4320,12 +4319,13 @@ header#site-header a#logo img {
     right: 0;
     bottom: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000333}}
   header#site-header nav#main-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     height: 100%;
+    box-shadow: inset 3px 0 5px 0 rgba(0, 0, 0, 0.5);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_orion\/foundation\/scss\/foundation\/components\/_offcanvas\.scss}line{font-family:\00003206}}
   header#site-header nav#main-nav ul li label {
@@ -4358,6 +4358,15 @@ header#site-header a#logo img {
   header#site-header nav#main-nav ul li.placeholder, header#site-header nav#main-nav ul li span.color {
     display: none;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000352}}
+  header#site-header nav#main-nav ul li a {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+    font-size: 21.6px;
+    font-size: 1.2rem;
+    color: white;
+  }
 }
 @media only screen and (max-width: 825px) and (min-width: 40.063em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_orion\/foundation\/scss\/foundation\/components\/_offcanvas\.scss}line{font-family:\00003247}}
@@ -4367,7 +4376,7 @@ header#site-header a#logo img {
 }
 
 @media (min-width: 825px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000367}}
   header#site-header nav#main-nav {
     display: block;
     border-bottom: 3px solid #0082c8;
@@ -4381,37 +4390,32 @@ header#site-header a#logo img {
     background-image: -webkit-linear-gradient(top, white, #dddddd);
     background-image: linear-gradient(to bottom,white, #dddddd);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000379}}
   header#site-header nav#main-nav ul li {
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000382}}
   header#site-header nav#main-nav ul li span.color {
-    background-color: #dae563;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dae563), color-stop(100%, #c8d724));
-    background-image: -webkit-linear-gradient(#dae563, #c8d724);
-    background-image: linear-gradient(#dae563, #c8d724);
-    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.38);
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    display: none;
+            /*@include linear-gradient(lighten($green, 5%), darken($green, 10%));
+            box-shadow: inset 0 2px 5px 0 rgba(black, .38);
+
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+
+            @include transform(translateY(-100%));
+            @include transition(all .2s ease-out);*/
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000397}}
   header#site-header nav#main-nav ul li.placeholder {
     width: 9%;
     height: 100%;
+    background-color: #0082c8;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003102}}
   header#site-header nav#main-nav ul li.placeholder span.color {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -4422,17 +4426,17 @@ header#site-header a#logo img {
     background-image: none;
     background-color: #0082c8;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003109}}
   header#site-header nav#main-nav ul li.placeholder div {
     padding: .25em 1em 0 1em;
     font-size: 28.8px;
     font-size: 1.6rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003116}}
   header#site-header nav#main-nav ul li.first a {
     padding-left: 12vw;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003119}}
   header#site-header nav#main-nav ul li:hover span.color, header#site-header nav#main-nav ul li.active-trail span.color {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -4440,11 +4444,11 @@ header#site-header a#logo img {
     -o-transform: translateY(0);
     transform: translateY(0);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003122}}
   header#site-header nav#main-nav ul li:hover span.color a, header#site-header nav#main-nav ul li.active-trail span.color a {
     color: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003125}}
   header#site-header nav#main-nav ul li a {
     display: block;
     padding: .25em 1em 0 1em;
@@ -4460,8 +4464,9 @@ header#site-header a#logo img {
     font-size: 28.8px;
     font-size: 1.6rem;
     border-left: 1px solid #0082c8;
+    text-shadow: 1px 1px 1px #fff;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_main-nav\.scss}line{font-family:\00003139}}
   header#site-header nav#main-nav ul li a:hover, header#site-header nav#main-nav ul li a:active, header#site-header nav#main-nav ul li a.active {
     color: #0082c8;
   }
