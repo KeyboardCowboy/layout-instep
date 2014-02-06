@@ -1,39 +1,60 @@
-header#site-header {
-  nav#utility {
-    display: none;
+@media ($collapse-nav) {
+  .off-canvas-wrap {
+    @include off-canvas-wrap;
+    height: 100%;
+    background-color: $blue;
+
+    &.move-left {
+      > .inner-wrap {
+        @include translate3d(-($off-canvas-width),0,0);
+
+      }
+      a.exit-off-canvas { @include back-link; }
+    }
+  }
+  .inner-wrap {
+    @include inner-wrap;
+    height: 100%;
   }
 
-  nav#main-nav {
+  header#site-header {
+    nav#utility {
+      display: none;
+    }
+
     h2 {
       color: white;
       float: right;
     }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      display: none;
+    nav#main-nav {
+      @include right-off-canvas-menu;
+      bottom: auto;
 
-      li {
-        margin: 0;
-        padding: 0;
-        display: block;
-        list-style: none;
+      ul {
+        @include off-canvas-list;
+        height: 100%;
 
-        position: relative;
-        z-index: 1;
-        vertical-align: middle;
+        li {
+          margin: 0;
+          padding: 0;
+          display: block;
+          list-style: none;
+
+          //position: relative;
+          z-index: 1;
+          vertical-align: middle;
+
+          &.placeholder, span.color {
+            display: none;
+          }
+        }
       }
-    }
-
-    &:active, &:hover {
-      ul {display: block;}
     }
   }
 }
 
-
-@media (min-width: $full-nav) {
+@media ($expand-nav) {
   header#site-header {
     nav#main-nav {
       display: block;

@@ -5,7 +5,11 @@ append head_meta
   title #{site_name} | #{page.title}
 
 append head_js
-  +js('http://codeorigin.jquery.com/jquery-1.10.2.min')
+  +js('http://codeorigin.jquery.com/jquery-1.10.2.min.js')
+  +js('_orion/foundation/js/vendor/fastclick.js')
+  +js('_orion/foundation/js/foundation.min.js')
+  script
+    $(document).foundation();
 
 append head_css
   +css('http://fonts.googleapis.com/css?family=Varela+Round|Metrophobic')
@@ -21,9 +25,9 @@ append header
   nav#utility.inline.divided
     +links(3)
 
-  nav#main-nav
-    a(href="#")
-      h2 Menu
+  a(href="#").right-off-canvas-toggle
+    h2 Menu
+  nav#main-nav.right-off-canvas-menu
     ul
       li.placeholder
         span.color &nbsp;

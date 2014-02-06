@@ -1,5 +1,6 @@
 // Orion base partial.  Copy this file into your project and include it at the
 // top of any stylesheet you compile.
+@charset "UTF-8";
 
 // -- VARIABLES
 // ------------
@@ -14,6 +15,9 @@
 // -----------------------
 // Load Orion's custom mixins, including Bourbon
 @import '../_orion/mixins';
+
+// Grab Foundation
+@import '../_orion/foundation/scss/foundation/components/offcanvas';
 
 // Create your own custom mixins
 @import 'components/mixins';
