@@ -11,12 +11,12 @@ $heading: Metrophobic, sans-serif;
 $paragraph: "Varela Round", serif;
 
 // Dimensions
-$full-nav: 825px;
+$full-nav: 875px;
 
 // Off-Canvas Menus
 $include-html-off-canvas-classes: false;
 $off-canvas-bg: $blue;
 
 // Breakpoints
-$collapse-nav: "max-width: 825px";
-$expand-nav: "min-width: 825px";
+$collapse-nav: "max-width: #{$full-nav}";
+$expand-nav: "min-width: #{$full-nav}";

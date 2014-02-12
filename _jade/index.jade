@@ -8,6 +8,7 @@ append head_js
   +js('http://codeorigin.jquery.com/jquery-1.10.2.min.js')
   +js('_orion/foundation/js/vendor/fastclick.js')
   +js('_orion/foundation/js/foundation.min.js')
+  +js('js/stickyHeader.jquery.min.js')
   script
     $(document).foundation();
 
@@ -19,7 +20,7 @@ append layout_links
   include includes/layout_links
 
 append header
-  a(href="#", id="logo")
+  a(href="#").logo.symbol
     img(src="images/logo.png")
 
   nav#utility.inline.divided
@@ -29,31 +30,28 @@ append header
     h2 Menu
   nav#main-nav.right-off-canvas-menu
     ul
-      li.placeholder
-        span.color &nbsp;
-        div.placebo &nbsp;
+      li.logo
+        div &nbsp;
+          a(href="#")
+            img(src="images/instep.png")
       li.first
-        span.color &nbsp;
         a(href="#") Home
       li.active-trail
-        span.color &nbsp;
         a(href="#").active About Us
         +links
       li
-        span.color &nbsp;
         a(href="#") The Insole
         +links
       li
-        span.color &nbsp;
         a(href="#") Community
-        +links
+        +links(5, 'This is what happens with a Really long title aaaahhhhhhhh')
       li
-        span.color &nbsp;
         a(href="#") Contact
 
 
 append main
   .col.one
+    +p(5,5)
   .col.two
 
 append footer

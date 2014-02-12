@@ -1,10 +1,11 @@
 header#site-header {
   @include linear-gradient(top, $blue 62%, transparent 62%);
+  @include o-rem(margin-bottom, 2);
   @include clearfix;
   position: relative;
   background-color: transparent;
 
-  a#logo {
+  a.logo {
     display: block;
     width: 18vw;
     min-width: 75px;

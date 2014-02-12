@@ -16,9 +16,6 @@
 // Load Orion's custom mixins, including Bourbon
 @import '../_orion/mixins';
 
-// Grab Foundation
-@import '../_orion/foundation/scss/foundation/components/offcanvas';
-
 // Create your own custom mixins
 @import 'components/mixins';
 
