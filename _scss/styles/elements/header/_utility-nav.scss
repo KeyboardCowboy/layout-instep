@@ -1,7 +1,11 @@
 header#site-header {
   nav#utility {
-    @include x-rem(margin, .5 1 0 0);
+    @include o-rem(margin, .5 1 0 0);
     text-align: right;
+
+    ul {
+      @extend %inline-menu;
+    }
 
     a {
       color: white;

@@ -1,6 +1,6 @@
 @include font-face(Chalet, '/instep/fonts/Chalet/chaletcomprime-colognesixty');
 
-html, body, .off-canvas-wrap, .inner-wrap {
+html, body, [oc='inner-wrapper'], [oc='outer-wrapper'] {
   height: 100%;
 }
 
@@ -9,12 +9,14 @@ body {
 }
 
 div#page {
-  @include linear-gradient(left, $grey 3%, white 3%, white 3.5%, $grey 3.5%, $grey 9%, white 9%, white 9.5%, $grey 9.5%, $grey 12.5%, white 12.5%, white 100%);
-  padding-bottom: 2em;
+  //@include linear-gradient(left, $grey 3%, white 3%, white 3.5%, $grey 3.5%, $grey 9%, white 9%, white 9.5%, $grey 9.5%, $grey 12.5%, white 12.5%, white 100%);
+  //padding-bottom: 2em;
 }
 
 #main {
-  @include x-rem(margin-left, 2);
+  .wrapper {
+    @include o-rem(padding, 0 2);
+  }
 
   .col {
     display: inline-block;
@@ -40,7 +42,12 @@ div#page {
 
 @include header-scale(70);
 
-#main {
-  //max-width: 52em;
-  @include x-rem(margin-right, 2);
+// Hidden flag for JS to detect breakpoints
+div[flag='mobile'] {
+  display: none;
+  width: 0;
+
+  @media ($collapse-nav) {
+    width: 1px;
+  }
 }

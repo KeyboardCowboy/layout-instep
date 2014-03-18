@@ -27,16 +27,18 @@ html
           block layout_links
         div Layouts
 
-    .off-canvas-wrap
-      .inner-wrap
+    div(oc='outer-wrapper')
+      div(oc='inner-wrapper')
         #page
           header#site-header
             block header
 
           #main
-            block main
+            .wrapper
+              block main
 
-        footer#site-footer
-          block footer
+            footer#site-footer
+              block footer
 
-        a(href="#").exit-off-canvas
+        a(href="#", oc='exit')
+    div(flag="mobile")

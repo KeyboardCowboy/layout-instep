@@ -19,3 +19,44 @@ header#site-header {
     }
   }
 }
+
+// Off-Canvas
+@media ($collapse-nav) {
+  body.sticky {
+    header#site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99;
+    }
+
+    #main {
+      position: fixed;
+      height: 100vh;
+      overflow-y: scroll;
+
+      .wrapper {
+        padding-top: 4rem;
+      }
+    }
+  }
+}
+
+// Large Screen
+@media ($expand-nav) {
+  body.sticky {
+    header#site-header nav#main-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      li.logo {
+        a {
+          @include transform(translateX(0));
+        }
+      }
+    }
+  }
+}

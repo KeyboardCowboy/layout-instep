@@ -1,49 +1,44 @@
+// Collapsed
 @media ($collapse-nav) {
-  .off-canvas-wrap {
-    @include off-canvas-wrap;
-    background-color: $blue;
+  @include o-oc-base;
+  @include o-oc-right('nav#main-nav');
 
-    &.move-left {
-      > .inner-wrap {
-        @include translate3d(-($off-canvas-width),0,0);
-
-      }
-      a.exit-off-canvas { @include back-link; }
-    }
-  }
-  .inner-wrap {
-    @include inner-wrap;
-    box-shadow: 3px 0 5px 0 rgba(0,0,0,.5);
+  .move-left a[oc='exit'] {
+    background: rgba(white, .62);
   }
 
   header#site-header {
-    nav#utility {
-      display: none;
-    }
+    nav#utility {display: none;}
 
     h2 {
       color: white;
       float: right;
+      margin-right: .5em;
     }
 
     nav#main-nav {
-      @include right-off-canvas-menu;
+      margin: 0;
       bottom: auto;
       box-shadow: inset 3px 0 5px 0 rgba(0,0,0,.5);
 
+      position: fixed;
+      height: 100vh;
+
       // All levels
       ul {
+        margin: 0;
+        padding: 0;
+
         li {
-          margin: 0;
-          padding: 0;
           display: block;
-          list-style: none;
 
           z-index: 1;
           vertical-align: middle;
 
-          &.placeholder, span.color {
-            display: none;
+          &.logo {
+            text-align: center;
+
+            img {width: 62%;}
           }
 
           a {
@@ -73,10 +68,13 @@
   }
 }
 
+// Expanded
 @media ($expand-nav) {
   header#site-header {
     nav#main-nav {
       @include linear-gradient(top, lighten($grey, 20%), $grey);
+      margin: 0;
+      padding: 0;
       display: block;
       border-bottom: 3px solid $blue;
       width: 100%;
@@ -87,6 +85,9 @@
 
       // All levels
       ul {
+        margin: 0;
+        padding: 0;
+
         li {
           float: left;
 
@@ -94,7 +95,11 @@
             width: 16vw;
             height: 100%;
             background-color: $blue;
-            border-bottom-right-radius: 50%;
+            border-bottom-right-radius: 100%;
+
+            img {
+              width: 100%;
+            }
 
             div {
               @include o-rem(font-size, 1.6);
@@ -176,20 +181,7 @@
           }
         }
       }
-
-      // Sticky header
-      &.sticky {
-        position: fixed;
-        top: 0;
-
-        li.logo {
-          border-bottom-right-radius: 100%;
-
-          a {
-            @include transform(translateX(0));
-          }
-        }
-      }
     }
   }
 }
+

@@ -1,15 +1,20 @@
 (function ($) {
   $(document).ready(function() {
-    var sticky = $('nav#main-nav');
-    var pos = sticky.position();
+    var nav = $('nav#main-nav');
+    var pos = nav.position();
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() >= pos.top) {
-        sticky.addClass('sticky');
+    stickyCheck();
+
+    $(window).resize(stickyCheck).scroll(stickyCheck);
+
+    function stickyCheck() {
+      // Nav Collapsed
+      if ($("*[flag='mobile']").width() == 1 || $(window).scrollTop() >= pos.top) {
+        $('body').addClass('sticky');
       }
       else {
-        sticky.removeClass('sticky');
+        $('body').removeClass('sticky');
       }
-    });
+    };
   });
 })(jQuery);

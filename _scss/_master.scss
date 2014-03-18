@@ -1,36 +1,15 @@
-// Orion base partial.  Copy this file into your project and include it at the
-// top of any stylesheet you compile.
-@charset "UTF-8";
+// Load Orion Toolset
+@import '../_orion/orion';
 
-// -- VARIABLES
-// ------------
-// Base variables to define common colors etc
-@import '../_orion/variables';
+// Load our own stuff
+@import 'vars';
+@import 'mixins';
 
-// Override base vars and define your own.
-@import 'components/vars';
+// Base styles
+@import '../_orion/normalize';
+@import '../_orion/typeplate';
 
-
-// -- MIXINS AND FUNCTIONS
-// -----------------------
-// Load Orion's custom mixins, including Bourbon
-@import '../_orion/mixins';
-
-// Create your own custom mixins
-@import 'components/mixins';
-
-
-// -- STYLE DEFINITIONS
-// --------------------
-// Import global styles here after Orion's.
-
-// Optional compilation of awesome CSS3 background patterns
-//@import '../_orion/backgrounds';
-
-// Load Orion's base styles such as Typeplate and Normalize.
-@import '../_orion/styles';
-
-// Global project styles
+// Project styles
 @import 'styles/global/structure';
 @import 'styles/global/content';
 
@@ -40,4 +19,4 @@
 
 // -- PROTOTYPING
 // --------------
-@import 'components/prototype';
+//@import 'prototype';

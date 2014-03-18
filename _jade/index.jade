@@ -6,11 +6,8 @@ append head_meta
 
 append head_js
   +js('http://codeorigin.jquery.com/jquery-1.10.2.min.js')
-  +js('_orion/foundation/js/vendor/fastclick.js')
-  +js('_orion/foundation/js/foundation.min.js')
+  +js('_orion/js/offCanvas.jquery.js')
   +js('js/stickyHeader.jquery.min.js')
-  script
-    $(document).foundation();
 
 append head_css
   +css('http://fonts.googleapis.com/css?family=Varela+Round|Metrophobic')
@@ -26,9 +23,9 @@ append header
   nav#utility.inline.divided
     +links(3)
 
-  a(href="#").right-off-canvas-toggle
+  a(href="#", oc='trigger', oc-dir='left')
     h2 Menu
-  nav#main-nav.right-off-canvas-menu
+  nav#main-nav
     ul
       li.logo
         div &nbsp;
