@@ -1225,18 +1225,27 @@ body {
   font-family: "Varela Round", serif;
 }
 
+@media (min-width: 875px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000317}}
-#main .wrapper {
-  padding: 0 36px;
-  padding: 0 2rem;
+  #main .wrapper {
+    padding: 0 36px;
+    padding: 0 2rem;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000321}}
+@media (max-width: 875px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000317}}
+  #main .wrapper {
+    padding: 0 18px;
+    padding: 0 1rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000326}}
 #main .col {
   display: inline-block;
   vertical-align: top;
-  width: 50%;
+  max-width: 52em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/global\/_structure\.scss}line{font-family:\0000331}}
 #main .col.one {
   margin-right: -5px;
 }
@@ -1689,26 +1698,26 @@ header#site-header a.logo img {
     width: 100%;
     z-index: 99;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000335}}
-  body.sticky [oc='outer-wrapper'].move-left #main {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000334}}
+  body.sticky #main {
     position: fixed;
     height: 100vh;
     overflow-y: scroll;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000340}}
-  body.sticky [oc='outer-wrapper'].move-left #main .wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000339}}
+  body.sticky #main .wrapper {
     padding-top: 4rem;
   }
 }
 @media (min-width: 875px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000349}}
   body.sticky header#site-header nav#main-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/proto\/instep\/_scss\/styles\/elements\/header\/_base\.scss}line{font-family:\0000356}}
   body.sticky header#site-header nav#main-nav li.logo a {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);

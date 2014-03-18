@@ -31,15 +31,13 @@ header#site-header {
       z-index: 99;
     }
 
-    [oc='outer-wrapper'].move-left {
-      #main {
-        position: fixed;
-        height: 100vh;
-        overflow-y: scroll;
+    #main {
+      position: fixed;
+      height: 100vh;
+      overflow-y: scroll;
 
-        .wrapper {
-          padding-top: 4rem;
-        }
+      .wrapper {
+        padding-top: 4rem;
       }
     }
   }
